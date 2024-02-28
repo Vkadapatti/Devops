@@ -43,7 +43,7 @@ public:
 
 int main() {
     HomeOwner owner("RAM");
-    EnvironmentSensor sensor("Winter", 10); // Example season and temperature
+    EnvironmentSensor sensor("Winter", 10);
     SmartGeyser geyser(owner, sensor);
     geyser.activate();
 
