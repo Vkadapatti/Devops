@@ -42,7 +42,7 @@ public:
 };
 
 int main() {
-    HomeOwner owner("John Doe");
+    HomeOwner owner("RAM");
     EnvironmentSensor sensor("Winter", 10); // Example season and temperature
     SmartGeyser geyser(owner, sensor);
     geyser.activate();
