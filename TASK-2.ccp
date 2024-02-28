@@ -45,7 +45,7 @@ public:
 };
 
 int main() {
-    HomeOwner owner("John Doe");
+    HomeOwner owner("RAM");
     EnvironmentSensor sensor("Winter", 5);
     SmartGeyser geyser(owner, sensor);
     geyser.activate();
