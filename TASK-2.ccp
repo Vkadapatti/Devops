@@ -38,7 +38,7 @@ public:
 
     void activate() {
         int currentTemp = sensor.getTemperature();
-        int requiredTemp = currentTemp + 15; // Adjusted for winter
+        int requiredTemp = currentTemp + 15;
         heater.setTemperature(requiredTemp);
         std::cout << "Geyser activated. Heating temperature set to: " << requiredTemp << " degrees Celsius.\n";
     }
@@ -46,7 +46,7 @@ public:
 
 int main() {
     HomeOwner owner("John Doe");
-    EnvironmentSensor sensor("Winter", 5); // Adjusted for winter
+    EnvironmentSensor sensor("Winter", 5);
     SmartGeyser geyser(owner, sensor);
     geyser.activate();
 
